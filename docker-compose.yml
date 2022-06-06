@@ -1,0 +1,11 @@
+
+services:
+  message_broker:
+    container_name: rabbitmq
+    image: rabbitmq:3.10-management
+    ports:
+      - 5672:5672
+      - 15672:15672
+     
+      
+      
