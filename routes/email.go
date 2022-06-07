@@ -6,6 +6,6 @@ import (
 )
 
 func Email(e *echo.Echo) {
-	e.GET("/send-email", controller.SendEmail)
+	e.GET("/send-email/:email", controller.SendEmail)
 
 }
