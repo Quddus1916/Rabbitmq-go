@@ -35,10 +35,10 @@ func Publish(email string) error {
 	//publish
 	err = ch.Publish(
 
-		"",     // exchange
-		q.Name, // routing key
-		false,  // mandatory
-		false,  // immediate
+		"",
+		q.Name,
+		false,
+		false,
 		amqp.Publishing{
 			ContentType: "text/plain",
 			Body:        []byte(email),
