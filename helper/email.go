@@ -5,7 +5,7 @@ import (
 	"rabbitmq/utils"
 )
 
-func SendEmail(email string) error {
+func PublishEmail(email string) error {
 	err := utils.Publish(email)
 
 	return err
